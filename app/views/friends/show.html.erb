@@ -1,0 +1,21 @@
+<div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">
+          <%= @friend.first_name %>
+          <%= @friend.last_name %>
+        </h1>
+        <p class="col-md-8 fs-6">
+          <strong>Phone:</strong>
+          <%= @friend.phone %>
+          <strong>Email:</strong>
+          <%= @friend.email %>
+          <strong>Facebook:</strong>
+          <%= @friend.facebook %>
+        </p>
+        <br/>
+        <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-outline-dark" %>    
+        <%= link_to 'Back', friends_path, class:"btn btn-outline-dark" %>
+      </div>
+    </div>
+
+
